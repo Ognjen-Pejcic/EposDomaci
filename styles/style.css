@@ -134,8 +134,8 @@ div.wrapper {
 }
 
 .row2 a {
-    color: #FF9900;
-    background-color: #FFFFFF;
+    color: #e04f79;
+    background-color: transparent;
 }
 
 .row3, .row3 a {
@@ -269,15 +269,37 @@ input, textarea, select {
     vertical-align: bottom;
     margin-bottom: 15px;
 }
-
+#header #social #icons{
+    list-style: none;
+    display: inline-flex;
+}
 #header #social{
     text-align: right;
     width: 100%;
 }
 
-#header #social li img:hover{
-    background:url("../images/icons/email.png") no-repeat;
+#header #social #f img{
+    filter: grayscale(1);
+}
 
+#header #social #f img:hover{
+    filter: grayscale(0);
+}
+
+#header #social #i img{
+    filter: grayscale(1);
+}
+
+#header #social #i img:hover{
+    filter: grayscale(0);
+}
+
+#header #social #e img{
+    filter: grayscale(1);
+}
+
+#header #social #e img:hover{
+    filter: grayscale(0);
 }
 
 #header nav li {
@@ -345,14 +367,17 @@ input, textarea, select {
     height: 260px;
     padding: 20px;
     overflow: hidden;
-    color: #989898;
-    background-color: #464646;
+    color: #676767;
+    background-color: #e7e7e7;
     line-height: 1.6em;
+}
+#container #slider figure figcaption h2{
+    color: #e04f79;
 }
 
 #container #slider figure figcaption a {
-    color: #FF9900;
-    background-color: #464646;
+    color: #e04f79;
+    background-color: transparent;
 }
 
 #container #slider figure h2 {
