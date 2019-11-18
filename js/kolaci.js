@@ -95,16 +95,16 @@ rightBtn.addEventListener('mouseleave', stopMovement);
 //Start this baby up
 (function init() {
 	var images = [
-		'images/k1.jpg',
-		'images/k2.jpg',
-		'images/k3.jpg',
-		'images/k4.jpg',
-		'images/k5.jpg',
-        'images/k6.jpg',
-        'images/k7.jpg',
-        'images/k8.jpg',
-        'images/k9.jpg',
-        'images/k10.jpg',
+		'images/kolaci/k1.jpg',
+		'images/kolaci/k2.jpg',
+		'images/kolaci/k3.jpg',
+		'images/kolaci/k4.jpg',
+		'images/kolaci/k5.jpg',
+        'images/kolaci/k6.jpg',
+        'images/kolaci/k7.jpg',
+        'images/kolaci/k8.jpg',
+        'images/kolaci/k9.jpg',
+        'images/kolaci/k10.jpg',
 	];
 	
 	//Set Initial Featured Image
