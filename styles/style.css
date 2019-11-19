@@ -9,7 +9,7 @@ body {
 }
 
 img {
-    max-width: 100%;
+    /* max-width: 100%; */
 }
 
 .clear {
@@ -64,7 +64,7 @@ address, article, aside, figcaption, figure, footer, header, nav, section {
 }
 
 .responsive-menu {
-    background-color: #D6D6D6;
+    background-color: white;
     width: 80%;
     height: 100vh;
     z-index: 998;
@@ -83,10 +83,11 @@ address, article, aside, figcaption, figure, footer, header, nav, section {
 
 .responsive-menu ul li {
     margin-top: 10px;
+    font-size: 25px;
 }
 
 .responsive-menu ul li a {
-    color: white;
+    color: #e04f79;
     text-decoration: none;
 }
 
@@ -126,7 +127,7 @@ address, article, aside, figcaption, figure, footer, header, nav, section {
 .responsive-navbar {
     height: 50px;
     width: 100%;
-    background-color: #D6D6D6;
+    background-color: white;
     position: fixed;
     z-index: 996;
     display: none;
@@ -458,18 +459,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-inline-end: 0px;
 }
 
-/* Landscape */
-
-@media screen and (max-width: 1060px) {
-    #primary {
-        width: 67%;
-    }
-    #secondary {
-        width: 30%;
-        margin-left: 3%;
-    }
-}
-
 /* Portrait */
 
 @media screen and (max-width: 768px) {
@@ -487,10 +476,17 @@ h1, h2, h3, h4, h5, h6 {
     #hamburger-icon {
         display: block;
     }
-    header {
+    #header {
         display: none;
     }
     .responsive-navbar {
         display: block;
+    }
+    #logo_mobile{
+        display: block;
+        height: 50px;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
