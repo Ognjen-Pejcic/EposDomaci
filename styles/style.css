@@ -19,6 +19,10 @@ body {
     #secondary { width:100%; margin:0; border:none; }
 }
 
+img{
+    max-width: 100%;
+}
+
 .clear {
     display:inline-block;
     clear: both;
