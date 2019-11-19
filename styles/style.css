@@ -41,6 +41,7 @@ address, article, aside, figcaption, figure, footer, header, nav, section {
 }
 
 /*----------------------------------------------Phone menu-------------------------------*/
+
 .responsive-overlay {
     position: fixed;
     width: 100%;
@@ -49,8 +50,9 @@ address, article, aside, figcaption, figure, footer, header, nav, section {
     opacity: 0.6;
     display: none;
     z-index: 997;
-  }
-  #hamburger-icon {
+}
+
+#hamburger-icon {
     color: #e04f79;
     font-size: 30px;
     cursor: pointer;
@@ -59,8 +61,9 @@ address, article, aside, figcaption, figure, footer, header, nav, section {
     left: 10px;
     z-index: 999;
     display: none;
-  }
-  .responsive-menu {
+}
+
+.responsive-menu {
     background-color: #D6D6D6;
     width: 80%;
     height: 100vh;
@@ -68,36 +71,44 @@ address, article, aside, figcaption, figure, footer, header, nav, section {
     position: fixed;
     left: -80%;
     transition: 0.25s;
-  }
-  .responsive-menu-open {
+}
+
+.responsive-menu-open {
     left: 0;
-  }
-  .responsive-overlay-open {
+}
+
+.responsive-overlay-open {
     display: block;
-  }
-  .responsive-menu ul li {
+}
+
+.responsive-menu ul li {
     margin-top: 10px;
-  }
-  .responsive-menu ul li a {
+}
+
+.responsive-menu ul li a {
     color: white;
     text-decoration: none;
-  }
-  .responsive-menu ul {
+}
+
+.responsive-menu ul {
     margin-top: 60px;
     margin-left: 20px;
-  }
-  #logo-responsive-menu {
+}
+
+#logo-responsive-menu {
     width: 100px;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-  }
-  .responsive-menu ul li a:hover {
+}
+
+.responsive-menu ul li a:hover {
     color: #e04f79;
     transition: 0.2s linear;
-  }
-  .responsive-menu ul li a::after {
+}
+
+.responsive-menu ul li a::after {
     position: absolute;
     bottom: -2px;
     left: 0;
@@ -105,12 +116,14 @@ address, article, aside, figcaption, figure, footer, header, nav, section {
     width: 0;
     height: 1px;
     transition: all 0.2s linear;
-  }
-  .responsive-menu ul li a:hover::after {
+}
+
+.responsive-menu ul li a:hover::after {
     width: 100%;
     background-color: #e04f79;
-  }
-  .responsive-navbar {
+}
+
+.responsive-navbar {
     height: 50px;
     width: 100%;
     background-color: #D6D6D6;
@@ -118,7 +131,7 @@ address, article, aside, figcaption, figure, footer, header, nav, section {
     z-index: 996;
     display: none;
     box-shadow: -1px 4px 10px 1px rgba(0, 0, 0, 0.3);
-  }
+}
 
 /* ----------------------------------------------Wrapper-------------------------------------*/
 
@@ -468,19 +481,16 @@ h1, h2, h3, h4, h5, h6 {
         margin: 0;
         border: none;
     }
-
-    #container{
+    #container {
         width: 300px;
     }
-
     #hamburger-icon {
         display: block;
-      }
-      header {
+    }
+    header {
         display: none;
-      }
-      .responsive-navbar {
+    }
+    .responsive-navbar {
         display: block;
-      }
-    
+    }
 }
