@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Milada's Cupcakery</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/kontakt.css" type="text/css">
+    <link rel="shortcut icon" type="images/png" href="images/favicon.png" />
+</head>
+<body>
+        <div class="wrapper row2">
+                <!-- Header -->
+                <header id="header">
+                  <a href="index.html"><img src="images/logo.png" alt="" height="128"></a>
+                  <div id="social">
+                    <div>
+                      <ul id="icons" style="">
+                        <li id="i"><a href="https://www.instagram.com/"><img src="images/icons/instagram.png"></a></li>
+                        <li id="f"><a href="https://www.facebook.com/"><img src="images/icons/facebook.png"></a></li>
+                        <li id="e"><a href="mailto:office@miladascupcakery.com"><img src="images/icons/email.png"></a></li>
+                      </ul>
+                    </div>
+                    <nav>
+                      <ul>
+                        <li><a href="index.html">Početna</a></li>
+                        <li><a href="kolaci.html">Cupcakes</a></li>
+                        <li><a href="torte.html">Torte</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                </header>
+                <!-- content -->
+            
+                <div class= "okvir">
+                        <div class="kontaktforma" > 
+                            <br><br>
+                            <h1>Vaša porudžbina:</h1>	
+                             <form id="forma" name="forma"  onsubmit="return slanje();">
+                                    <label for="ime" >Ime</label><br>
+                                    <input size = "30" type="text" id="ime"  placeholder="Unesite Vaše ime"><br>
+                                    <span id="greskaIme"></span>
+                                <br><br>
+                                <label for="prezime">Prezime</label><br>
+                                    <input  size = "30" type="text" id="prezime" name="lastname" placeholder="Unesite Vaše prezime"><br>
+                                    <span id="greskaPrezime"></span>
+                                <br><br>
+                                <label for="mail">E-mail adresa</label><br>
+                                    <input size = "30" type="email" id="mail" name="email" placeholder="Unesite Vašu e-mail adresu"><br>
+                                    <span id="greskaMail"></span>
+                                <br><br>
+                                <label for="tel">Telefon (upišite u formatu XXX-XXXXXXX)</label><br>
+                                    <input size = "30" type="tel" id="tel" name="phone" placeholder="Unesite broj telefona" ><br>
+                                    <span id="greskaTel"></span>
+                                <br><br>
+                                    <label for="poruka">Poruka</label><br>
+                                        <textarea  id="poruka" name="poruka" placeholder="Upišite svoju poruku..." rows="5" cols="32"></textarea>
+                                <br><br>   			
+                                   
+                                    <input type="button" style="border-radius:2px;width:80px; padding:5px; background-color:gray; color:white;" value="Submit" onclick="slanje()"/>	
+                                    <button id="dugme">Dugme</button>
+                                 
+                              </form>
+                              <br><br><br><br><br><br>
+                          </div>
+                                
+                    
+                    </div>
+                <!-- Footer -->
+                <div class="wrapper row3">
+                  <footer id="footer" class="clear">
+                    <section class="one_quarter">
+                      <h2 class="title">Pratite nas</h2>
+                      <ul class="pratite_nas">
+                        <li>Facebook: <a href="www.facebook.com">Milada's cupcakery</a></li>
+                        <li>Instagram: <a href="www.instagram.com">@mafini_milada_hp</a></li>
+                        <li>LinkedIn: <a href="www.linkedin.com">Milada's cupcakery</a></li>
+                        <li>E-mail: <a href="www.facebook.com">office@miladascupcakery.com</a></li>
+                      </ul>
+            
+                    </section>
+                    <section class="one_quarter">
+                      <h2 class="title">Kontakt</h2>
+                      <div class="about">
+                        <img class="imgl" src="images/logo2.png" width="130" height="130" alt="">
+                        <p>Ukoliko imate pohvale, primedbe ili predlog potencijalne saradnje sa nama, kontaktirajte nas na sledecem
+                          <a href="kontakt.html" style="color: #e04f79;">linku</a>.<br><br><br>
+                          <i>Milada's cupcakery</i>
+                        </p>
+                      </div>
+            
+                    </section>
+                  </footer>
+                </div>
+   <script src="js/forma.js"></script>
+</body>
+</html>

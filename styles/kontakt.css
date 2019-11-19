@@ -356,7 +356,6 @@ color: #e04f79;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
-
 .kontaktforma{
 
 	padding-top: 70px;
@@ -378,4 +377,15 @@ color: #e04f79;
 	border: 1px solid gray;
 	margin-top: 50px;
 	border-radius: 5px;
+}
+
+#dugme {
+    display: none;
+    color: white;
+    font-size: 25px;
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 14px;
+    background-color: #222;
+    margin-top: 2px;
 }
