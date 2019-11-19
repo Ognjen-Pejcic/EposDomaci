@@ -4,11 +4,28 @@
 <head>
   <title>Milada's Cupcakery</title>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true">
   <link rel="stylesheet" href="styles/style-torte.css" type="text/css">
   <link rel="shortcut icon" type="images/png" href="images/favicon.png" />
 </head>
 
 <body>
+    <div class="responsive-overlay"></div>
+    <div class="responsive-menu">
+      <img id="hamburger-icon" src="images/icons/menu.png" class="fas fa-bars"></img>
+      <ul>
+        <li><a class="rm-link" href="index.html">Početna</a></li>
+        <li><a class="rm-link" href="kolaci.html">Cupcakes</a></li>
+        <li><a class="rm-link" href="torte.html">Torte</a></li>
+        <li><a class="rm-link" href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </div>
+    <div class="responsive-navbar">
+      <img id="hamburger-icon" src="images/icons/menu.png" class="fas fa-bars"></img>
+      <img id="logo_mobile" src="images/logo.png"></img>
+    </div>
   <div class="wrapper row2">
     <header id="header">
       <a href="index.html"><img src="images/logo.png" alt="" height="128"></a>
@@ -46,10 +63,8 @@
             <li><a href="#img_5" class="slike"><img src="images/torte/t5.jpg"></a></li>
             <li><a href="#img_6" class="slike"><img src="images/torte/t6.jpg"></a></li>
             <li><a href="#img_7" class="slike"><img src="images/torte/t7.jpg"></a></li>
-            <li><a href="#img_8" class="slike"><img
-                  src="https://image.freepik.com/free-photo/skyscraper-with-clouds-reflection_23-10.jpg"></a></li>
-            <li><a href="#img_9" class="slike"><img
-                  src="https://image.freepik.com/free-photo/foggy-pine-forest_426-19323742.jpg"></a></li>
+            <li><a href="#img_8" class="slike"><img src="images/torte/t3.jpg"></a></li>
+            <li><a href="#img_9" class="slike"><img src="images/torte/t2.jpg"></a></li>
           </ul>
           <a href="#_1" class="lightbox trans" id="img_1"><img src="images/torte/t1.jpg"></a>
           <a href="#_2" class="lightbox trans" id="img_2"><img src="images/torte/t2.jpg"></a>
@@ -58,10 +73,8 @@
           <a href="#_5" class="lightbox trans" id="img_5"><img src="images/torte/t5.jpg"></a>
           <a href="#_6" class="lightbox trans" id="img_6"><img src="images/torte/t6.jpg"></a>
           <a href="#_7" class="lightbox trans" id="img_7"><img src="images/torte/t7.jpg"></a>
-          <a href="#_8" class="lightbox trans" id="img_8"><img
-              src="https://image.freepik.com/free-photo/skyscraper-with-clouds-reflection_23-10.jpg"></a>
-          <a href="#_9" class="lightbox trans" id="img_9"><img
-              src="https://image.freepik.com/free-photo/foggy-pine-forest_426-19323742.jpg"></a>
+          <a href="#_8" class="lightbox trans" id="img_8"><img src="images/torte/t3.jpg"></a>
+          <a href="#_9" class="lightbox trans" id="img_9"><img src="images/torte/t2.jpg"></a>
         </div>
       </div>
     </div>
@@ -94,6 +107,8 @@
         </section>
       </footer>
     </div>
+    <script src="js/jquery/jquery-3.4.1.min.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 
 </html>

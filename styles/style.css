@@ -480,8 +480,8 @@ h1, h2, h3, h4, h5, h6 {
 	border: 1px solid gray;
 	margin-top: 50px;
 	border-radius: 5px;
-/* Portrait */
 }
+
 @media screen and (max-width: 768px) {
     #primary {
         width: 100%;
