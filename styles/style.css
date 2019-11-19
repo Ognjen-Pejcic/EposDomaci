@@ -489,4 +489,46 @@ h1, h2, h3, h4, h5, h6 {
         margin-left: auto;
         margin-right: auto;
     }
+    #container #slider figure img{
+        display: none;
+    }
+
+    #container #slider figure figcaption{
+        margin-top: 50px;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+
+    #container #slider figure figcaption h2{
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+
+    #container #slider figure figcaption p {
+        padding:20px;
+    }
+
+    #container #intro section article figure ul{
+        margin-top: 20px;
+    }
+
+    #container #intro section article figure figcaption{
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    #footer{
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #footer p{
+        margin 0;
+    }
+    .one_quarter{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
