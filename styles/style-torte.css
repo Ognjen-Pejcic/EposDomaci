@@ -663,13 +663,14 @@ body {
         margin-right: auto;
     }
     .top ul li{
-        width: 100px;
+        width: 33%;
         height:100px;
     }
     .top{
         height: auto;
-        width: 77%;
-        
+        width: auto;
+        margin-left: auto;
+        margin-right:auto;
     }
     #order p{
         font-size: 25px;
@@ -677,5 +678,10 @@ body {
     .container{
         margin-left: auto;
         margin-right: auto;
+    }
+    .galery{    
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
     }
 }
