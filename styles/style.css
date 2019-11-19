@@ -8,10 +8,6 @@ body {
     background-size: cover;
 }
 
-img {
-    /* max-width: 100%; */
-}
-
 .clear {
     display: inline-block;
     clear: both;
