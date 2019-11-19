@@ -7,12 +7,17 @@ body {
     background-color: transparent;
     background-size: cover;
 }
+
+img {
+    /* max-width: 100%; */
+}
+
 .clear {
-    display:inline-block;
+    display: inline-block;
     clear: both;
 }
 
-.clear2{
+.clear2 {
     display: flex;
 }
 
@@ -33,6 +38,100 @@ address, article, aside, figcaption, figure, footer, header, nav, section {
     display: inline-flexbox;
     margin: 0;
     padding: 0;
+}
+
+/*----------------------------------------------Phone menu-------------------------------*/
+
+.responsive-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;
+    display: none;
+    z-index: 997;
+}
+
+#hamburger-icon {
+    color: #e04f79;
+    font-size: 30px;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 999;
+    display: none;
+}
+
+.responsive-menu {
+    background-color: white;
+    width: 80%;
+    height: 100vh;
+    z-index: 998;
+    position: fixed;
+    left: -80%;
+    transition: 0.25s;
+}
+
+.responsive-menu-open {
+    left: 0;
+}
+
+.responsive-overlay-open {
+    display: block;
+}
+
+.responsive-menu ul li {
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.responsive-menu ul li a {
+    color: #e04f79;
+    text-decoration: none;
+}
+
+.responsive-menu ul {
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+#logo-responsive-menu {
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.responsive-menu ul li a:hover {
+    color: #e04f79;
+    transition: 0.2s linear;
+}
+
+.responsive-menu ul li a::after {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    content: "";
+    width: 0;
+    height: 1px;
+    transition: all 0.2s linear;
+}
+
+.responsive-menu ul li a:hover::after {
+    width: 100%;
+    background-color: #e04f79;
+}
+
+.responsive-navbar {
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 996;
+    display: none;
+    box-shadow: -1px 4px 10px 1px rgba(0, 0, 0, 0.3);
 }
 
 /* ----------------------------------------------Wrapper-------------------------------------*/
@@ -71,7 +170,7 @@ div.wrapper {
     margin: 0 auto;
 }
 
-#footer{
+#footer {
     display: flex;
     width: 960px;
     margin: 0 auto;
@@ -96,12 +195,11 @@ h1, h2, h3, h4, h5, h6 {
     /* float: left; */
     width: 100%;
     margin: 0 0 0 0;
-    background-color:rgba(231,231,231, 0.8);
+    background-color: rgba(231, 231, 231, 0.8);
 }
 
 .one_quarter {
     width: 50%;
-
 }
 
 /*----------------------------------------------Header-------------------------------------*/
@@ -118,36 +216,38 @@ h1, h2, h3, h4, h5, h6 {
     vertical-align: bottom;
     margin-bottom: 15px;
 }
-#header #social #icons{
+
+#header #social #icons {
     list-style: none;
     display: inline-flex;
 }
-#header #social{
+
+#header #social {
     text-align: right;
     width: 100%;
 }
 
-#header #social #f img{
+#header #social #f img {
     filter: grayscale(1);
 }
 
-#header #social #f img:hover{
+#header #social #f img:hover {
     filter: grayscale(0);
 }
 
-#header #social #i img{
+#header #social #i img {
     filter: grayscale(1);
 }
 
-#header #social #i img:hover{
+#header #social #i img:hover {
     filter: grayscale(0);
 }
 
-#header #social #e img{
+#header #social #e img {
     filter: grayscale(1);
 }
 
-#header #social #e img:hover{
+#header #social #e img:hover {
     filter: grayscale(0);
 }
 
@@ -213,11 +313,11 @@ h1, h2, h3, h4, h5, h6 {
     padding: 20px;
     overflow: hidden;
     color: #676767;
-    background-color:rgba(231,231,231, 0.8);
+    background-color: rgba(231, 231, 231, 0.8);
     line-height: 1.6em;
 }
 
-#container #slider figure figcaption h2{
+#container #slider figure figcaption h2 {
     color: #e04f79;
 }
 
@@ -278,7 +378,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
 
-#container #intro #body_section{
+#container #intro #body_section {
     display: inline-block;
 }
 
@@ -308,9 +408,9 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 0 8px 0;
     padding: 0 0 5px 0;
     border-bottom: 1px solid #D6D6D6;
-} */
+}
 
-#container #homepage section nav li.last {
+*/ #container #homepage section nav li.last {
     margin: 0;
 }
 
@@ -319,19 +419,20 @@ h1, h2, h3, h4, h5, h6 {
     background: url("../images/arrow.gif") left center no-repeat;
 }
 
-.h2_section{
+.h2_section {
     padding-top: 20px;
     padding-left: 20px;
     color: #e04f79;
 }
 
-.p_section{
+.p_section {
     padding-left: 20px;
 }
 
-.pics{
+.pics {
     padding-top: 10px;
 }
+
 /*----------------------------------------------Footer-------------------------------------*/
 
 #footer {
@@ -344,9 +445,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .pratite_nas li a:hover {
-color: #e04f79;
+    color: #e04f79;
 }
-.pratite_nas li{
+
+.pratite_nas li {
     padding-bottom: 10px;
 }
 
@@ -357,6 +459,7 @@ color: #e04f79;
     margin-inline-end: 0px;
 }
 
+<<<<<<< HEAD
 .kontaktforma{
 
 	padding-top: 70px;
@@ -378,4 +481,78 @@ color: #e04f79;
 	border: 1px solid gray;
 	margin-top: 50px;
 	border-radius: 5px;
+=======
+/* Portrait */
+
+@media screen and (max-width: 768px) {
+    #primary {
+        width: 100%;
+    }
+    #secondary {
+        width: 100%;
+        margin: 0;
+        border: none;
+    }
+    #container {
+        width: 300px;
+    }
+    #hamburger-icon {
+        display: block;
+    }
+    #header {
+        display: none;
+    }
+    .responsive-navbar {
+        display: block;
+    }
+    #logo_mobile{
+        display: block;
+        height: 50px;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #container #slider figure img{
+        display: none;
+    }
+
+    #container #slider figure figcaption{
+        margin-top: 50px;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+
+    #container #slider figure figcaption h2{
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+
+    #container #slider figure figcaption p {
+        padding:20px;
+    }
+
+    #container #intro section article figure ul{
+        margin-top: 20px;
+    }
+
+    #container #intro section article figure figcaption{
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    #footer{
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #footer p{
+        margin 0;
+    }
+    .one_quarter{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+>>>>>>> 3eb79eb2145a3f1280a90072ae4a556359f07a3f
 }
