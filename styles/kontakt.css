@@ -47,10 +47,11 @@ div.wrapper {
 
 .row2 {
     color: #232323;
-    background-image: url('../images/kolaci/k12.jpg');
-    background-repeat: no-repeat;
+    background-image: url('../images/background.jpg'),linear-gradient(rgba(255, 255, 255, 0.6),rgba(255, 255, 255, 0.6));
+    /* background-repeat: no-repeat; */
     background-attachment: fixed;
-    background-size: cover;
+    background-size: auto;
+    background-blend-mode: overlay;
 }
 
 .row2 a {
